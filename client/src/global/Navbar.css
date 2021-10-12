@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: var(--orange);
+    color: var(--black);
+}
+
+.navbar__ul {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.navbar__link {
+    display: flex;
+    align-items: flex-end;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.navbar__link:hover {
+    background-color: var(--purple);
+    color: var(--black);
+    border-radius: 20px;
+}
+
+
+
+

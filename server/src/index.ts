@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import { config } from "./config/keys";
 import { Trim } from "./middleware/trim";
 import { userRt } from "./routes/userRt";
+import { todoRt } from "./routes/todoRt";
 
 (async () => {
     await mongoose.connect(config.MONG_URI)
@@ -34,6 +35,7 @@ import { userRt } from "./routes/userRt";
 
     // Routes and Port
     app.use("/api", userRt);
+    app.use("/api", todoRt);
     const port = process.env.PORT || 9000;
     app.listen(port, () => {
         console.log(`Server: http://localhost:${port}`);
